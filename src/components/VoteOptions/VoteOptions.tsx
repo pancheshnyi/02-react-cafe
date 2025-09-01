@@ -1,7 +1,8 @@
 import css from "./VoteOptions.module.css";
+import type { VoteType } from "../../types/votes";
 
 interface VoteOptionsProps {
-  onVote: (vote: "good" | "neutral" | "bad") => void;
+  onVote: (vote: VoteType) => void;
   onReset: () => void;
   canReset: boolean;
 }
